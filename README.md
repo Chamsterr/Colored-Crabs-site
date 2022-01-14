@@ -1,2 +1,2 @@
 # Colored-Crabs-site
-Study project BSTU
+Study project BSTU for OPI
