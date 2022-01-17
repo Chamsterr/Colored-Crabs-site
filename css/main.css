@@ -1,148 +1,160 @@
+@charset "UTF-8";
+@media (max-width: 1450px) {
+  .button {
+    /* label скрыт */
+    display: none; }
+
+  .div1 {
+    display: none; }
+
+  .div2 {
+    margin-left: 38px; }
+
+  .div3 {
+    display: block; }
+
+  .title {
+    margin: auto; }
+
+  .main-menu li {
+    /* пункты меню расположены вертикально */
+    /* каждый имеет ширину 100% */
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    width: 100%; } }
 @font-face {
   font-family: Etna;
   src: url(../fonts/etna-free-font.otf);
-
   font-family: Custom;
-  src: url(../fonts/20421.ttf);
-}
-@keyframes back{
-  0%{
-    background-image: url(../img/background/background2.png);
-  }
-  25%{
-    background-image: url(../img/background/background.png);
-  }
-  50%{
-    background-image: url(../img/background/background4.png);
-  }
-  75%{
-    background-image: url(../img/background/background5.png);
-  }
-  100%{
-    background-image: url(../img/background/background2.png);
-  }
-}
-*{
+  src: url(../fonts/20421.ttf); }
+@keyframes back {
+  0% {
+    background-image: url(../img/background/background2.png); }
+  25% {
+    background-image: url(../img/background/background.png); }
+  50% {
+    background-image: url(../img/background/background4.png); }
+  75% {
+    background-image: url(../img/background/background5.png); }
+  100% {
+    background-image: url(../img/background/background2.png); } }
+* {
   letter-spacing: 3px;
   font-family: Custom;
   margin: 0px;
   color: white;
-  font-size: 25px;
-}
+  font-size: 25px; }
 
-body{
+span.i {
+  font-style: italic; }
+
+span.b {
+  font-weight: bold; }
+
+.i a {
+  color: #AFEEEE;
+  text-decoration: none; }
+
+a:visited {
+  color: #dc94eb; }
+
+body {
   animation: back 15s alternate infinite;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: darkviolet;
-}
-.container{
+  background-color: darkviolet; }
+
+.container {
+  display: flex; }
+
+.flex {
   display: flex;
-}
+  margin-bottom: 200px; }
 
-.flex{
-  display: flex;
-  margin-bottom: 200px;
-}
+.div1 {
+  flex-basis: 14%; }
 
-.div1{
-  flex-basis: 14%;
-}
+.div2 {
+  flex-basis: 72%; }
 
-.div2{
-  flex-basis: 72%;
-}
+.div3 {
+  flex-basis: 14%; }
 
-.div3{
-  flex-basis: 14%;
-}
-.menu-main{
-/* пункты меню скрыты */
-display: none;
-padding: 0;+
-margin: 0;
-float: right;
+.menu-main {
+  display: none;
+  padding: 0;
+  margin: 0;
+  float: right; }
 
-}
-#menu{
-/* чекбокс скрыт */
-display: none;
-}
-.title{
+#menu {
+  display: none; }
+
+.title {
   font-size: 50px;
   font-family: Etna;
   color: white;
-  text-align: center;
-}
-h2{
+  text-align: center; }
+
+h2 {
   font-family: Custom;
   font-size: 35px;
   color: white;
   text-align: center;
-  margin: 15px;
-}
+  margin: 15px; }
 
-h3{
+h3 {
   font-family: Custom;
   font-size: 25px;
   color: white;
   text-align: center;
-  margin: 15px;
-}
-nav{
-  float;
-  position: fixed;
-  bottom: 45%;
-}
-i a{
-  color: #AFEEEE;
-  text-decoration: none;
-}
-.menu-list{
-  list-style-type: none;
-  margin: 5px;
-}
+  margin: 15px; }
 
-/* #menu{
-  display: none;
-} */
+nav {
+  position: fixed;
+  bottom: 41%; }
+
+.menu-list {
+  list-style-type: none;
+  margin: 5px; }
 
 #menu:checked + nav .menu-main {
-/* когда чекбокс активен меню становится видимым */
-display: block;
-}
-.button{
+  display: block; }
+
+.button {
   writing-mode: vertical-rl;
   text-orientation: upright;
   border: 2px white solid;
-  float: right;
-}
+  float: right; }
 
-p{
+p {
   margin-bottom: 50px;
-  margin-top: 50px;
-}
+  margin-top: 50px; }
 
-figure > img.push{
+figure > img.push {
   max-width: 7%;
   position: fixed;
   bottom: 10px;
-  right: 10px;
-}
+  right: 10px; }
 
-figure{
+figure {
   max-height: 150px;
-  text-align: center;
-}
+  text-align: center; }
 
-img.teamleader{
-  max-height:  250px;
-}
-.rab{
+img.teamleader {
+  max-height: 250px; }
+
+.rab {
   display: inline-block;
   max-height: 150px;
   margin-top: 100px;
   margin-right: 15px;
-  flex: 1;
-}
+  flex: 1; }
+
+.st0 {
+  fill: white;
+  stroke: white;
+  stroke-miterlimit: 10; }
+
+/*# sourceMappingURL=main.css.map */
